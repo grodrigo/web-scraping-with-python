@@ -18,7 +18,18 @@ statement (e.g. to declare a variable), j line to jump (e.g. to avoid known erro
 python -m pdb -c continue myscript.py # for python2.7 -c isn't present.
 
 ## Configuration ##
-*settings.py and headers.txt*  
+It's advisable to create an isolated workspace with virtualenv for example.  
+```bash
+virtualenv venv
+source venv/bin/activate
+# to deactivate just do wherever you want: deactivate
+```
+Install the requirements  
+```bash
+pip install -r requirements.txt
+```
+
+**settings.py and headers.txt**  
 
 In the app directory is placed the whole application, and in Downloads the downloads organized by material.
 Copy settings_example.py to settings.py and put your own configuration if you want.
