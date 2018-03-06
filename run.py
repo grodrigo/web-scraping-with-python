@@ -12,7 +12,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(
         description      = 'Download courses with scraping',
-        epilog           = "*** Change settings.py to make your life easier ***",
+        epilog           = "*** Change settings.py to make your life easier, remember to add the headers file ***",
         argument_default = argparse.SUPPRESS
         )
 
@@ -46,5 +46,7 @@ if __name__ == "__main__":
     else:
         if settings.GeneralConfig.COURSE:
             download_course(session, settings.GeneralConfig.COURSE)
-        if settings.GeneralConfig.MATERIAL:
+        elif settings.GeneralConfig.MATERIAL:
             download_material_from_url(session, settings.GeneralConfig.MATERIAL)
+        else:
+            print("You must provide at least one thing to download, either by command or by file")
