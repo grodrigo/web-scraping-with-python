@@ -1,0 +1,5 @@
+*.py[cod]
+
+Downloads/
+app/headers.txt
+app/settings.py
