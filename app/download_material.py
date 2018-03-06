@@ -91,7 +91,7 @@ def download_material_from_url(session, url):
         downloaded_courses = {'singles':{}}
         #    pass #aun no se creo descargados.json
     except ValueError:
-        print 'json error, delete file "downloaded.json" and the downloads will restart.
+        print 'json error, delete file "downloaded.json" and the downloads will restart.'
         sys.exit()
 
     downloaded_courses['singles'][material_id] = [course_slug, material_slug,url]
