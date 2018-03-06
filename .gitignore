@@ -3,3 +3,9 @@
 Downloads/
 app/headers.txt
 app/settings.py
+
+# Environments
+.env
+.venv
+env/
+venv/
